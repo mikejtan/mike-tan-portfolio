@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike Tan — Video Editor</title>
+<meta name="description" content="Mike Tan — Video Editor. Cinematic, commercial, social and storytelling edits.">
+<style>
+:root{--bg:#080808;--fg:#f3f1ec;--muted:#9a9995;--line:#252525;--accent:#d8ff43}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif;line-height:1.4}a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;padding:24px 5vw;display:flex;justify-content:space-between;mix-blend-mode:difference}
+.logo{font-weight:800;letter-spacing:.08em}.navlinks{display:flex;gap:28px;font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+.hero{min-height:100vh;display:flex;align-items:flex-end;padding:10vh 5vw 7vh;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 25%,#262626 0,#101010 32%,#080808 65%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(8,8,8,.9) 100%);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:1100px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.22em;color:var(--accent);margin-bottom:24px}
+h1{font-size:clamp(68px,13vw,190px);line-height:.82;letter-spacing:-.07em;margin:0;font-weight:800}.hero-sub{font-size:clamp(18px,2vw,27px);max-width:620px;color:#c8c6c0;margin:35px 0}.cta{display:inline-flex;gap:10px;align-items:center;border:1px solid #555;padding:15px 21px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;transition:.25s}.cta:hover{background:var(--fg);color:#000}
+section{padding:120px 5vw;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:55px}.section-num{color:var(--accent);font-size:12px;letter-spacing:.15em}.section-title{font-size:clamp(42px,7vw,92px);letter-spacing:-.055em;line-height:.9;margin:0;max-width:800px}
+.reel{aspect-ratio:16/9;border:1px solid #292929;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#151515,#090909);position:relative;overflow:hidden}.reel .play{width:82px;height:82px;border:1px solid #777;border-radius:50%;display:grid;place-items:center;font-size:25px}.reel p{position:absolute;bottom:22px;left:24px;margin:0;color:#777;font-size:11px;text-transform:uppercase;letter-spacing:.14em}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{min-height:390px;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:linear-gradient(145deg,#181818,#0c0c0c)}.card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,#333,transparent 40%);opacity:.55}.card>*{position:relative}.tag{font-size:10px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}.card h3{font-size:36px;letter-spacing:-.04em;margin:8px 0 4px}.card p{color:var(--muted);margin:0;max-width:400px}
+.services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}.service{padding:32px 20px 45px 0;border-bottom:1px solid var(--line)}.service h3{font-size:27px;margin:0 0 10px}.service p{color:var(--muted);max-width:520px}
+.about{display:grid;grid-template-columns:1fr 1.5fr;gap:8vw}.about p{font-size:clamp(25px,3.2vw,46px);letter-spacing:-.035em;margin:0}.small{font-size:13px;color:var(--muted);max-width:430px}
+.contact{min-height:75vh;display:flex;flex-direction:column;justify-content:space-between}.contact h2{font-size:clamp(55px,10vw,145px);line-height:.83;letter-spacing:-.065em;margin:0}.email{font-size:clamp(18px,2.5vw,32px);border-bottom:1px solid #555;padding-bottom:10px;display:inline-block}
+footer{padding:25px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#666;font-size:11px;text-transform:uppercase;letter-spacing:.12em}
+@media(max-width:700px){.navlinks{display:none}.work,.services,.about{grid-template-columns:1fr}.card{min-height:300px}.about{gap:30px}section{padding:85px 5vw}}
+</style>
+</head>
+<body>
+<nav><div class="logo">MT / VIDEO</div><div class="navlinks"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div class="hero-content">
+<div class="eyebrow">Video Editor · Cinematic / Commercial / Social</div>
+<h1>MIKE<br>TAN.</h1>
+<p class="hero-sub">I turn raw footage into sharp, cinematic stories that make people stop, watch and remember.</p>
+<a class="cta" href="#reel">View showreel ↓</a>
+</div>
+</header>
+
+<section id="reel">
+<div class="section-head"><div class="section-num">01 / SHOWREEL</div><h2 class="section-title">90 seconds.<br>Years of editing instinct.</h2></div>
+<div class="reel"><div class="play">▶</div><p>Replace this area with your showreel video</p></div>
+</section>
+
+<section id="work">
+<div class="section-head"><div class="section-num">02 / SELECTED WORK</div><h2 class="section-title">Different formats.<br>One editing standard.</h2></div>
+<div class="work">
+<div class="card"><span class="tag">01 / Cinematic</span><h3>Luxury & Film</h3><p>Atmospheric pacing, precise cuts, sound design and cinematic color.</p></div>
+<div class="card"><span class="tag">02 / Commercial</span><h3>Brand Stories</h3><p>Product-focused edits built around rhythm, detail and visual impact.</p></div>
+<div class="card"><span class="tag">03 / Social</span><h3>Short Form</h3><p>Fast, engaging edits for Instagram, TikTok, YouTube Shorts and digital campaigns.</p></div>
+<div class="card"><span class="tag">04 / Storytelling</span><h3>Travel & Lifestyle</h3><p>Turning moments and footage into a story with a clear emotional arc.</p></div>
+</div>
+</section>
+
+<section id="services">
+<div class="section-head"><div class="section-num">03 / SERVICES</div><h2 class="section-title">What I can<br>edit for you.</h2></div>
+<div class="services">
+<div class="service"><h3>Commercial Editing</h3><p>Polished brand films, product videos and promotional campaigns.</p></div>
+<div class="service"><h3>Social Media</h3><p>Short-form content, reels, ads and attention-focused edits.</p></div>
+<div class="service"><h3>YouTube</h3><p>Long-form storytelling, pacing, B-roll, graphics and sound design.</p></div>
+<div class="service"><h3>Cinematic Content</h3><p>Travel, lifestyle, real estate and visual storytelling with a premium finish.</p></div>
+</div>
+</section>
+
+<section id="about">
+<div class="section-head"><div class="section-num">04 / ABOUT</div></div>
+<div class="about">
+<p>Good editing isn't about adding more. It's about knowing exactly <em>what to keep</em>.</p>
+<div class="small"><p>I'm Mike Tan, a video editor focused on creating clean, cinematic and engaging edits. I care about pacing, storytelling, sound design and the small details that make footage feel intentional.</p><br><p>Available for freelance projects and long-term editing partnerships.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div><div class="section-num">05 / CONTACT</div><h2>LET'S<br>CREATE.</h2></div>
+<div><a class="email" href="mailto:mikejaspertan@gmail.com">mikejaspertan@gmail.com ↗</a></div>
+</section>
+
+<footer><span>© 2026 Mike Tan</span><span>Video Editor</span></footer>
+</body>
+</html>
