@@ -16,6 +16,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:10;padding:24px 5vw;display:flex
 h1{font-size:clamp(68px,13vw,190px);line-height:.82;letter-spacing:-.07em;margin:0;font-weight:800}.hero-sub{font-size:clamp(18px,2vw,27px);max-width:620px;color:#c8c6c0;margin:35px 0}.cta{display:inline-flex;gap:10px;align-items:center;border:1px solid #555;padding:15px 21px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;transition:.25s}.cta:hover{background:var(--fg);color:#000}
 section{padding:120px 5vw;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:55px}.section-num{color:var(--accent);font-size:12px;letter-spacing:.15em}.section-title{font-size:clamp(42px,7vw,92px);letter-spacing:-.055em;line-height:.9;margin:0;max-width:800px}
 .reel{aspect-ratio:16/9;border:1px solid #292929;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#151515,#090909);position:relative;overflow:hidden}.reel .play{width:82px;height:82px;border:1px solid #777;border-radius:50%;display:grid;place-items:center;font-size:25px}.reel p{position:absolute;bottom:22px;left:24px;margin:0;color:#777;font-size:11px;text-transform:uppercase;letter-spacing:.14em}
+.reel iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 .work{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{min-height:390px;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:linear-gradient(145deg,#181818,#0c0c0c)}.card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,#333,transparent 40%);opacity:.55}.card>*{position:relative}.tag{font-size:10px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}.card h3{font-size:36px;letter-spacing:-.04em;margin:8px 0 4px}.card p{color:var(--muted);margin:0;max-width:400px}
 .services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}.service{padding:32px 20px 45px 0;border-bottom:1px solid var(--line)}.service h3{font-size:27px;margin:0 0 10px}.service p{color:var(--muted);max-width:520px}
 .about{display:grid;grid-template-columns:1fr 1.5fr;gap:8vw}.about p{font-size:clamp(25px,3.2vw,46px);letter-spacing:-.035em;margin:0}.small{font-size:13px;color:var(--muted);max-width:430px}
@@ -37,8 +42,16 @@ footer{padding:25px 5vw;border-top:1px solid var(--line);display:flex;justify-co
 </header>
 
 <section id="reel">
-<div class="section-head"><div class="section-num">01 / SHOWREEL</div><h2 class="section-title">90 seconds.<br>Years of editing instinct.</h2></div>
-<div class="reel"><div class="play">▶</div><p>Replace this area with your showreel video</p></div>
+<div class="section-head"><div class="section-num">01 / SHOWREEL</div><h2 class="section-title">20 seconds.<br>Editing instinct.</h2></div>
+<div class="reel">
+    <iframe
+        src="https://www.youtube.com/embed/j8EBDtRqfgk"
+        title="Mike Tan — Video Edit"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</div>
 </section>
 
 <section id="work">
